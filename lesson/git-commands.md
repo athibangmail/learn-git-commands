@@ -1,0 +1,46 @@
+# Commands for Git 
+ - Remote URL add and Update
+    - `git remote add origin {url}`
+    - `git remote set_url origin {new url} `
+- Reset
+    - If you want to move the files changes from staging area to working area. 
+    - `git rebase {file name}`
+- Amend
+    - To update the commit you have did
+    - `git commit --amend -m {message}` it will update the message
+    - if you have add any files to staging area then last commit will get update with this commit
+    - `git commit --amend`
+- Staging
+    - `git add -A` add only the current directory changes of tracking files.
+    - `git add .` add ony the current director changes
+    - `girt add *` add all current and all sub directory changes.
+    - `git add -u` add all the changes with git tracking already
+- Set-Upstream
+    - `git push --set-upstream origin {branch}` Or
+    - `git push -u origin {branch}`
+    - update the branch in remote very first time.
+- Reset
+    - Reset command for moving the state of the file from commit to stage or stage to work or commit to working area all the ways it is possible.
+    - From commit to staging
+    - `git reset --soft {hash}` -
+    - From Staging to Working
+    - `git reset --mixed {hash}` OR
+    - `git reset {hash}`
+    - From commit to delete(ignore)
+    - `git reset --hard {hash}`
+- Diff
+    -`git diff {hash1} {hash2}`
+    - will different changes from two commits
+- Commit
+    - Add all and commit in short way
+    - `git commit -am {"message"}`
+- Branch
+    - List all branchs
+    - `git branch -a`
+    - maintain a diffenet name of the branch for local and remote
+    - `git branch --set-upstream origin/{any name}`
+    - delete branch in remote
+    - `git branch --delete origin {branch}`
+- Revert
+    - Reverting back the commit changes
+    - `git revert {hash}`
